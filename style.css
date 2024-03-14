@@ -118,9 +118,6 @@ form {
   width: 100%;
   padding: 3rem;
   margin-top: 5rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
 
 @media (min-width: 450px) {
@@ -137,5 +134,10 @@ form {
 
   .form-content > div:nth-child(2) {
     padding-top: 0;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
 }
