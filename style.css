@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-height: 100vh;
 }
 
 * {
@@ -33,6 +34,11 @@ body {
 .hero {
   color: black;
   flex-direction: column;
+  align-items: start;
+}
+
+.hero p:nth-child(3) {
+  display: none;
 }
 
 form {
@@ -72,8 +78,6 @@ form {
   z-index: -1;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 0;
   opacity: 0.2;
@@ -115,4 +119,21 @@ form {
   width: 100%;
   padding: 3rem;
   margin-top: 5rem;
+}
+
+@media (min-width: 450px) {
+  .hero p:nth-child(3) {
+    display: contents;
+  }
+
+  .form-content {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-content > div:nth-child(2) {
+    padding-top: 0;
+  }
 }
