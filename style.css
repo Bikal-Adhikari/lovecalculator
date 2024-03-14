@@ -10,7 +10,7 @@ body {
   --primaryClr: red;
   --secondaryClr: orange;
 }
-.wrapper {
+.container {
   width: 80%;
   margin: auto;
 }
