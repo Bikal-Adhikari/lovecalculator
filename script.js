@@ -29,6 +29,7 @@ const love = () => {
       count2++;
     }
   }
+
   const loveScore = (count1 * 10 + count2).toString() + "%";
 
   alert("Your love score is: " + loveScore);

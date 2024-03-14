@@ -23,69 +23,70 @@
         </div>
       </header>
       <!-- hero -->
-      <section class="hero flex container">
-        <h1>Welcome to the greatest creation of Love Guru!</h1>
-        <p>
-          This remarkable tool was crafted with the sole purpose of guiding you
-          through the labyrinth of love.
-        </p>
-        <p>
-          In moments of uncertainty about the potential of a relationship, the
-          Love Guru's invention comes to your aid. Through the Love Calculator,
-          meticulously designed by the Guru himself, you can now unravel the
-          probability of a prosperous union between two hearts. This innovative
-          mechanism offers an effective means to gauge the prospects of a
-          romantic connection, empowering you with invaluable insights into your
-          love journey.
-        </p>
+      <div class="hero-content">
+        <section class="hero flex container">
+          <h1>Welcome to the greatest creation of Love Guru!</h1>
+          <p>
+            This remarkable tool was crafted with the sole purpose of guiding
+            you through the labyrinth of love.
+          </p>
+          <p>
+            In moments of uncertainty about the potential of a relationship, the
+            Love Guru's invention comes to your aid. Through the Love
+            Calculator, meticulously designed by the Guru himself, you can now
+            unravel the probability of a prosperous union between two hearts.
+            This innovative mechanism offers an effective means to measure the
+            prospects of a romantic connection, empowering you with invaluable
+            insights into your love journey.
+          </p>
 
-        <p>
-          To uncover the likelihood of compatibility with your desired partner,
-          simply input both full names—first and last—into the designated text
-          boxes below, and let the Love Calculator work its magic with just a
-          click of the Calculate button.
-        </p>
-      </section>
+          <p>
+            To uncover the likelihood of compatibility with your partner, simply
+            input both full names into the designated text boxes below, and let
+            the Love Calculator work its magic with just a click of the button.
+          </p>
+        </section>
+        <!-- form  -->
+        <section class="love-form">
+          <form method="get" action="" name="lf" class="form flex">
+            <div class="form-content">
+              <div class="form-group flex">
+                <label for="name1">Your name</label>
+                <input
+                  type="text"
+                  name="name1"
+                  id="name1"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="form-group flex">
+                <label for="name2">Your crush</label>
+                <input
+                  type="text"
+                  name="name2"
+                  id="name2"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-button">
+              <button class="btn btn-primary" type="submit" onclick="love()">
+                Calculate Love
+              </button>
+            </div>
+            <img src="./assets/lovecalculator-heart.svg" alt="" />
+          </form>
+        </section>
+      </div>
 
-      <!-- form  -->
-      <section class="love-form">
-        <form method="get" action="" name="lf" class="form flex">
-          <div class="form-content">
-            <div class="form-group flex">
-              <label for="name1">Your name</label>
-              <input
-                type="text"
-                name="name1"
-                id="name1"
-                placeholder="Full Name"
-                required
-              />
-            </div>
-            <div class="form-group flex">
-              <label for="name2">Your crush</label>
-              <input
-                type="text"
-                name="name2"
-                id="name2"
-                placeholder="Full Name"
-                required
-              />
-            </div>
-          </div>
-          <div class="form-button">
-            <button class="btn btn-primary" type="submit" onclick="love()">
-              Calculate Love
-            </button>
-          </div>
-          <img src="./assets/lovecalculator-heart.svg" alt="" />
-        </form>
-      </section>
       <!-- footer -->
-    </div>
+
       <footer class="footer flex container">
         &copy; All right reserved. Made By Bikal Adhikari
       </footer>
-    
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
