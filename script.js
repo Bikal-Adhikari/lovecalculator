@@ -43,5 +43,13 @@ const landingPage = (score, name1, name2) => {
     document.querySelector(
       ".final-text span"
     ).innerText = `${name1} and ${name2}`;
+  } else if (score >= 30 && score < 70) {
+    document.querySelector(".hero-content").style.display = "none";
+    document.querySelector(".result-page").style.display = "block";
+    document.querySelector(".finalScore").innerText = `${score}%`;
+    document.querySelector(".finalNames").innerText = `${name1} and ${name2}`;
+    document.querySelector(
+      ".final-text span"
+    ).innerText = `${name1} and ${name2}`;
   }
 };

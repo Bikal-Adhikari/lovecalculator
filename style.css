@@ -149,7 +149,7 @@ form {
 .finalScore {
   position: relative;
   bottom: 20px;
-  z-index: 2;
+  z-index: ;
   background-image: url(./assets/lovecalculator-heart.svg);
   background-repeat: no-repeat;
   background-position: center;
