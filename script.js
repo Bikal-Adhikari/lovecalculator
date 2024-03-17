@@ -38,6 +38,7 @@ const landingPage = (score, name1, name2) => {
   if (score < 30) {
     document.querySelector(".hero-content").style.display = "none";
     document.querySelector(".result-page").style.display = "block";
+    document.querySelector(".text-30").style.display = "block";
     document.querySelector(".finalScore").innerText = `${score}%`;
     document.querySelector(".finalNames").innerText = `${name1} and ${name2}`;
     document.querySelector(
@@ -46,10 +47,20 @@ const landingPage = (score, name1, name2) => {
   } else if (score >= 30 && score < 70) {
     document.querySelector(".hero-content").style.display = "none";
     document.querySelector(".result-page").style.display = "block";
+    document.querySelector(".text-70").style.display = "block";
     document.querySelector(".finalScore").innerText = `${score}%`;
     document.querySelector(".finalNames").innerText = `${name1} and ${name2}`;
     document.querySelector(
-      ".final-text span"
+      ".final-text div:nth-child(2) span"
+    ).innerText = `${name1} and ${name2}`;
+  } else {
+    document.querySelector(".hero-content").style.display = "none";
+    document.querySelector(".result-page").style.display = "block";
+    document.querySelector(".text-100").style.display = "block";
+    document.querySelector(".finalScore").innerText = `${score}%`;
+    document.querySelector(".finalNames").innerText = `${name1} and ${name2}`;
+    document.querySelector(
+      ".final-text div:nth-child(3) span"
     ).innerText = `${name1} and ${name2}`;
   }
 };

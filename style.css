@@ -149,7 +149,6 @@ form {
 .finalScore {
   position: relative;
   bottom: 20px;
-  z-index: ;
   background-image: url(./assets/lovecalculator-heart.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -163,6 +162,16 @@ form {
   justify-content: center;
   margin: 0 auto;
   margin-top: -65px;
+}
+
+.text-30 {
+  display: none;
+}
+.text-70 {
+  display: none;
+}
+.text-100 {
+  display: none;
 }
 
 @media (min-width: 450px) {
