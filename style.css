@@ -120,7 +120,10 @@ form {
   margin-top: 5rem;
 }
 
-/* .finalNames {
+/* .result-page {
+  display: none;
+}
+.finalNames {
   position: relative;
   padding-bottom: 10px;
   margin: 0;

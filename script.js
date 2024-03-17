@@ -29,8 +29,16 @@ const love = () => {
       count2++;
     }
   }
-
+  // loverscore = count1 * 10 + count2;
   const loveScore = (count1 * 10 + count2).toString() + "%";
 
   alert("Your love score is: " + loveScore);
+  // landingPage(loverscore);
 };
+
+// const landingPage = (score) => {
+//   if (score < 30) {
+//     document.querySelector(".hero-content").style.display = "none";
+//     document.querySelector(".result-page").style.display = "block";
+//   }
+// };
