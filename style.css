@@ -120,7 +120,7 @@ form {
   margin-top: 5rem;
 }
 
-/* .result-page {
+.result-page {
   display: none;
 }
 .finalNames {
@@ -163,7 +163,7 @@ form {
   justify-content: center;
   margin: 0 auto;
   margin-top: -65px;
-} */
+}
 
 @media (min-width: 450px) {
   .hero p:nth-child(3) {

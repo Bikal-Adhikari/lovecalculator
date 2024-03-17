@@ -29,16 +29,19 @@ const love = () => {
       count2++;
     }
   }
-  // loverscore = count1 * 10 + count2;
-  const loveScore = (count1 * 10 + count2).toString() + "%";
+  const loverscore = count1 * 10 + count2;
 
-  alert("Your love score is: " + loveScore);
-  // landingPage(loverscore);
+  landingPage(loverscore, name1, name2);
 };
 
-// const landingPage = (score) => {
-//   if (score < 30) {
-//     document.querySelector(".hero-content").style.display = "none";
-//     document.querySelector(".result-page").style.display = "block";
-//   }
-// };
+const landingPage = (score, name1, name2) => {
+  if (score < 30) {
+    document.querySelector(".hero-content").style.display = "none";
+    document.querySelector(".result-page").style.display = "block";
+    document.querySelector(".finalScore").innerText = `${score}%`;
+    document.querySelector(".finalNames").innerText = `${name1} and ${name2}`;
+    document.querySelector(
+      ".final-text span"
+    ).innerText = `${name1} and ${name2}`;
+  }
+};

@@ -39,7 +39,6 @@
             prospects of a romantic connection, empowering you with invaluable
             insights into your love journey.
           </p>
-
           <p>
             To uncover the likelihood of compatibility with your partner, simply
             input both full names into the designated text boxes below, and let
@@ -48,7 +47,13 @@
         </section>
         <!-- form  -->
         <section class="love-form">
-          <form method="get" action="" name="lf" class="form flex">
+          <form
+            method="get"
+            action=""
+            name="lf"
+            class="form flex"
+            onsubmit="love(); return false;"
+          >
             <div class="form-content">
               <div class="form-group flex">
                 <label for="name1">Your name</label>
@@ -72,7 +77,7 @@
               </div>
             </div>
             <div class="form-button">
-              <button class="btn btn-primary" type="submit" onclick="love()">
+              <button class="btn btn-primary" type="submit">
                 Calculate Love
               </button>
             </div>
@@ -80,7 +85,7 @@
           </form>
         </section>
       </div>
-      <!-- <section class="result-page">
+      <section class="result-page">
         <div class="container below-35">
           <div class="top-img">
             <h2 class="finalNames">name1 and name2</h2>
@@ -91,8 +96,9 @@
           </div>
           <div class="final-text">
             <div class="text">
-              There's potential for a relationship between Bikal and Alisha,
-              albeit slim. While success is conceivable, both parties must
+              There's potential for a relationship between
+              <span>name1 and name2</span>
+              , albeit slim. While success is conceivable, both parties must
               actively invest in it. Merely hoping for a favorable outcome isn't
               enough; dedicating time and effort is crucial. Despite diligent
               efforts, the likelihood of success remains low. Thus, it's
@@ -101,10 +107,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-
+      </section>
       <!-- footer -->
-
       <footer class="footer flex container">
         &copy; All right reserved. Made By Bikal Adhikari
       </footer>
