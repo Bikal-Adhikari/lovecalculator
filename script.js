@@ -44,6 +44,7 @@ const landingPage = (score, name1, name2) => {
     document.querySelector(
       ".final-text span"
     ).innerText = `${name1} and ${name2}`;
+    document.querySelector(".result-page").style.minHeight = "90vh";
   } else if (score >= 30 && score < 70) {
     document.querySelector(".hero-content").style.display = "none";
     document.querySelector(".result-page").style.display = "block";
@@ -53,6 +54,7 @@ const landingPage = (score, name1, name2) => {
     document.querySelector(
       ".final-text div:nth-child(2) span"
     ).innerText = `${name1} and ${name2}`;
+    document.querySelector(".result-page").style.minHeight = "90vh";
   } else {
     document.querySelector(".hero-content").style.display = "none";
     document.querySelector(".result-page").style.display = "block";
@@ -62,5 +64,6 @@ const landingPage = (score, name1, name2) => {
     document.querySelector(
       ".final-text div:nth-child(3) span"
     ).innerText = `${name1} and ${name2}`;
+    document.querySelector(".result-page").style.minHeight = "90vh";
   }
 };

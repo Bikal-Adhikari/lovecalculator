@@ -175,6 +175,9 @@ form {
 }
 
 @media (min-width: 450px) {
+  .hero-content {
+    min-height: 90vh;
+  }
   .hero p:nth-child(3) {
     display: contents;
   }
